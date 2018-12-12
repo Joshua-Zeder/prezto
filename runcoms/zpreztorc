@@ -35,7 +35,11 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'completion' \
-  'prompt'
+  'prompt' \
+  'git' \
+  'syntax-highlighting' \
+  'history-substring-search' \
+  'autosuggestions'
 
 #
 # Autosuggestions
@@ -85,6 +89,8 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 
 # Set the query found color.
 # zstyle ':prezto:module:history-substring-search:color' found ''
+zstyle ':prezto:module:git:info:branch' format 'branch%b'
+zstyle ':prezto:module:git:info:keys' format 'prompt' ' git(%b)'
 
 # Set the query not found color.
 # zstyle ':prezto:module:history-substring-search:color' not-found ''
